@@ -1,0 +1,46 @@
+export const tableData = [
+  {
+    name: 'Copper',
+    date: '01.01.2024',
+    productTypesAndPrices: [
+      ['Brass Scrap', 23.0],
+      ['Granulated Copper Scrap', 21.0],
+      ['Coil Copper Scrap', 19.0],
+      ['Burnt Copper Scrap ', 20.0],
+      ['Copper Pipe Scrap', 19.5],
+      ['Copper Cathode Scrap', 20.5],
+      ['Copper Wire Scrap', 19.5],
+      ['Copper Sheet Scrap', 22.0],
+      ['Copper Cable Scrap', 21.5],
+    ],
+  },
+  {
+    name: 'Zinc',
+    date: '01.01.2024',
+    productTypesAndPrices: [
+      ['Zinc Scrap', 15.0],
+      ['Zinc Ingot', 17.0],
+      ['Zinc Alloy Scrap', 16.5],
+      ['Zinc Dust', 14.0],
+      ['Zinc Oxide', 16.5],
+      ['Zinc Sheet Scrap', 15.5],
+      ['Zinc Coated Steel Scrap', 14.5],
+      ['Zinc Anode', 18.0],
+    ],
+  },
+  {
+    name: 'Aluminum',
+    date: '01.01.2024',
+    productTypesAndPrices: [
+      ['Aluminum Scrap', 12.0],
+      ['Aluminum Ingot', 14.0],
+      ['Aluminum Alloy Scrap', 13.5],
+      ['Aluminum Wire Scrap', 12.5],
+      ['Aluminum Extrusion Scrap', 13.0],
+      ['Aluminum Can Scrap', 11.5],
+      ['Aluminum Sheet Scrap', 13.5],
+      ['Aluminum Foil Scrap', 12.0],
+      ['Aluminum Wheel Scrap', 13.0],
+    ],
+  },
+];
