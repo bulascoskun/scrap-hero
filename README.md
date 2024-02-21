@@ -3,7 +3,7 @@
 ## Overview
 This app was website was created for my personal portfolio. It was created using React + Vite
 
-""LIVE LINK"" : https://scraphero.netlify.app/
+**LIVE LINK** : https://scraphero.netlify.app/
 
 ## Features
 - **Home Page:** The main landing page of the project.
