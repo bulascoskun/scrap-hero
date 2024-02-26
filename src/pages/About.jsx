@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { HeroNotHome, LightTitle } from '../components';
 
-import img1 from '../assets/about-us-images/about-us-1.avif';
-import img2 from '../assets/about-us-images/about-us-2.avif';
-import img3 from '../assets/about-us-images/about-us-3.avif';
+import img1 from '../assets/about-us-images/about-us-1.jpg';
+import img2 from '../assets/about-us-images/about-us-2.jpg';
+import img3 from '../assets/about-us-images/about-us-3.jpg';
 
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
+import BlurryImageLoad from '../assets/blurry-image/blurry-load';
 
 const Wrapper = styled.section`
   color: var(--color-4);
@@ -60,6 +61,8 @@ const Wrapper = styled.section`
     }
   }
 `;
+
+const blurryImageLoad = new BlurryImageLoad();
 
 const About = () => {
   const ref1 = useRef(null);
