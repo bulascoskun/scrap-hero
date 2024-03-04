@@ -24,6 +24,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  min-height: 100dvh;
+}
+
 .page {
   margin-top: 100px;
 }
