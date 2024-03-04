@@ -7,10 +7,11 @@ import PriceList from './pages/PriceList';
 import Products from './pages/Products';
 import SingleProduct from './pages/SingleProduct';
 import Error from './pages/Error';
-import React, { useEffect } from 'react';
-const AboutLazy = React.lazy(() => import('./pages/About'));
+import React, { Suspense, useEffect } from 'react';
 
 const App = () => {
+  const AboutLazy = React.lazy(() => import('./pages/About'));
+
   const location = useLocation();
 
   useEffect(() => {
@@ -26,7 +27,14 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<AboutLazy />} />
+          <Route
+            path="about"
+            element={
+              <Suspense>
+                <AboutLazy />
+              </Suspense>
+            }
+          />
           <Route path="products" element={<Products />} />
           <Route path="products/:id" element={<SingleProduct />} />
           <Route path="pricelist" element={<PriceList />} />
