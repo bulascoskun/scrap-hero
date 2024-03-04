@@ -34,4 +34,5 @@ const PriceList = () => {
     </Wrapper>
   );
 };
+
 export default PriceList;

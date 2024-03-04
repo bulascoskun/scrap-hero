@@ -49,7 +49,7 @@ const Wrapper = styled.section`
       flex-direction: column;
       align-items: center;
 
-      padding: 0;
+      padding: 1.5rem 0;
     }
 
     .hero-info-text {
@@ -66,7 +66,7 @@ const Wrapper = styled.section`
       justify-content: center;
       align-items: center;
 
-      padding: 0;
+      padding: 1rem 0;
     }
 
     .hero-info-text {

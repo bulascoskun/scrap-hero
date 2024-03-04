@@ -2,13 +2,13 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Layout from './pages/Layout';
 import Home from './pages/Home';
-import About from './pages/About';
 import Contact from './pages/Contact';
 import PriceList from './pages/PriceList';
 import Products from './pages/Products';
 import SingleProduct from './pages/SingleProduct';
 import Error from './pages/Error';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+const AboutLazy = React.lazy(() => import('./pages/About'));
 
 const App = () => {
   const location = useLocation();
@@ -26,7 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<AboutLazy />} />
           <Route path="products" element={<Products />} />
           <Route path="products/:id" element={<SingleProduct />} />
           <Route path="pricelist" element={<PriceList />} />
