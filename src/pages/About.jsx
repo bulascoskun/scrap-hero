@@ -13,11 +13,16 @@ const Wrapper = styled.section`
   color: var(--color-4);
 
   .about-image {
+    background-color: #c2c2c2;
+
+    aspect-ratio: 537/358;
+    width: 530px;
     max-width: 45%;
+
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem;
+    margin: 1rem;
   }
 
   .about-info {

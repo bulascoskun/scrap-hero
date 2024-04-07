@@ -29,6 +29,7 @@ const Wrapper = styled.section`
 
   .image img {
     max-width: 100%;
+    aspect-ratio: 404/500;
     height: 500px;
   }
 

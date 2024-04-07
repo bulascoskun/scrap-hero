@@ -14,8 +14,8 @@ const Wrapper = styled.div`
   background-color: var(--color-4);
 
   .carousel-image {
-    height: 100%;
-    width: 100%;
+    aspect-ratio: 1/1;
+    height: 240px;
     object-fit: cover;
     transition: all 0.5s;
     border-radius: 0.5rem;

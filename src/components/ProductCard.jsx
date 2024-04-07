@@ -45,7 +45,9 @@ const Wrapper = styled.div`
   .product-image {
     object-fit: cover;
     aspect-ratio: 1 / 1;
+    width: 316px;
     max-width: 100%;
+    background-color: #c2c2c2;
   }
 
   img,
